@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <title>blue1x - Computer Science Engineer & Full-Stack Developer</title>
+    <meta name="description" content="Computer Science Engineer and Full-Stack Developer specializing in government systems, mobile app development, and enterprise IT solutions. Expert in Python, Java, Flutter, .NET, C#, C++, Angular, and modern web technologies.">
+    <meta name="keywords" content="Computer Science Engineer, Full-Stack Developer, Government Systems, Python, Java, Flutter, .NET, C#, Angular, Sikkim, SIFMS, Enterprise IT">
+    <meta name="author" content="blue1x">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0d1117">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="blue1x - Computer Science Engineer & Full-Stack Developer">
+    <meta property="og:description" content="Computer Science Engineer from Sikkim developing state-level digital governance solutions, enterprise applications, and critical infrastructure systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blue1x.dev">
+    <meta property="og:image" content="https://blue1x.dev/og-image.png">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="blue1x - Computer Science Engineer">
+    <meta name="twitter:description" content="Computer Science Engineer developing government systems and enterprise solutions">
+
+    <!-- Performance optimizations -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Controls -->
+    <div class="theme-controls">
+        <button id="theme-toggle" class="theme-btn">🌙 Dark</button>
+        <button id="font-toggle" class="font-btn">Fira Code</button>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="code-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
+                    </div>
+                    <span class="terminal-title">blue1x.dev - loading...</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="code-line">
+                        <span class="prompt">$</span>
+                        <span class="command">git clone portfolio.git</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="prompt">$</span>
+                        <span class="command">npm install dependencies</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="prompt">$</span>
+                        <span class="command typing-animation">npm start</span>
+                        <span class="cursor-blink">_</span>
+                    </div>
+                </div>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="loading-text">
+                    <span class="loading-percentage">0%</span>
+                    <span class="loading-status">Initializing...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="nav-brand">blue1x.dev</div>
+            <div class="nav-info">
+                <span class="nav-role">COMPUTER SCIENCE ENGINEER</span>
+                <div class="nav-links">
+                    <a href="#work" class="nav-link">projects</a>
+                    <a href="#about" class="nav-link">about</a>
+                    <a href="#contact" class="nav-link">contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Game Background -->
+    <section class="hero">
+        <canvas id="gameCanvas" class="game-canvas"></canvas>
+        <div class="game-hud">
+            <div class="hud-item">
+                <span class="hud-label">SCORE:</span>
+                <span class="hud-value hud-score">0</span>
+            </div>
+            <div class="hud-item">
+                <span class="hud-label">LIVES:</span>
+                <span class="hud-value hud-lives">3</span>
+            </div>
+            <div class="hud-item">
+                <span class="hud-label">BRICKS:</span>
+                <span class="hud-value hud-bricks">0</span>
+            </div>
+        </div>
+        <div class="game-overlay">
+            <button class="exit-game-btn" onclick="stopBrickBreakerGame()">EXIT GAME</button>
+        </div>
+        <div class="hero-background">
+            <div class="geometric-shape shape-1"></div>
+            <div class="geometric-shape shape-2"></div>
+            <div class="star-element"></div>
+            
+            <!-- Digital Garden Component -->
+            <div class="digital-garden">
+                <div class="code-climbers">
+                    <div class="climber climber-1">
+                        <span class="code-segment">if(</span>
+                        <span class="code-segment">growth</span>
+                        <span class="code-segment">)</span>
+                    </div>
+                    <div class="climber climber-2">
+                        <span class="code-segment">while(</span>
+                        <span class="code-segment">true</span>
+                        <span class="code-segment">)</span>
+                    </div>
+                    <div class="climber climber-3">
+                        <span class="code-segment">for(</span>
+                        <span class="code-segment">i=0</span>
+                        <span class="code-segment">)</span>
+                    </div>
+                </div>
+                <div class="code-flowers">
+                    <div class="flower flower-1">
+                        <div class="flower-center">&lt;/&gt;</div>
+                        <div class="flower-petals">
+                            <span class="petal">{ }</span>
+                            <span class="petal">[ ]</span>
+                            <span class="petal">( )</span>
+                            <span class="petal">" "</span>
+                        </div>
+                    </div>
+                    <div class="flower flower-2">
+                        <div class="flower-center">★</div>
+                        <div class="flower-petals">
+                            <span class="petal">var</span>
+                            <span class="petal">let</span>
+                            <span class="petal">const</span>
+                            <span class="petal">func</span>
+                        </div>
+                    </div>
+                    <div class="flower flower-3">
+                        <div class="flower-center">⚡</div>
+                        <div class="flower-petals">
+                            <span class="petal">===</span>
+                            <span class="petal">!==</span>
+                            <span class="petal">&amp;&amp;</span>
+                            <span class="petal">||</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-label">
+                <span class="hero-small-text">class Engineer extends Developer</span>
+                <div class="availability">
+                    <span class="availability-number">24/7</span>
+                    <span class="availability-text">ONLINE<br>READY<br>TO CODE</span>
+                </div>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="hero-title-line">CODE</span>
+                <span class="hero-title-connector">||</span>
+                <span class="hero-title-line">CREATE</span>
+            </h1>
+
+            <div class="hero-subtitle">
+                <span class="typing-text">Building digital solutions that matter_</span>
+            </div>
+
+            <div class="hero-cta">
+                <button class="play-btn pulse-btn" onclick="startBrickBreakerGame()">PLAY_GAME()</button>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-slide">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">system.info.getProfile()</h2>
+                <div class="about-text">
+                    <div class="code-block">
+                        <pre>const engineer = {
+    name: "blue1x",
+    role: "Computer Science Engineer",
+    location: "Gangtok, Sikkim",
+    expertise: ["Web Application", "Mobile Development", "System Administration"],
+    stack: ["Python", "Java", "Flutter", "Android", "MySQL", "MongoDB", ".NET", "C#", "C++", "Angular", "Vanilla HTML/CSS/JS"],
+    currentProject: {
+        name: "SIFMS",
+        description: "State Integrated Financial Management System",
+        client: "State Government",
+        role: "Full-Stack Developer"
+    }
+};</pre>
+                    </div>
+                    <div class="about-description">
+                        <p>Experienced Computer Science Engineer based in Gangtok, Sikkim, with a strong background in full-stack development, system administration, and enterprise-grade application design. Currently contributing to the development of SIFMS (State Integrated Financial Management System) as part of a highly skilled team, transforming complex operational requirements into robust, scalable solutions for real-time decision-making in government financial systems.</p>
+                        <p>Adept in technologies such as Python, Java, Flutter, .NET, Angular, and databases like MySQL and MongoDB. Known for delivering high-performance solutions under tight deadlines and collaborating effectively in cross-functional environments. Passionate about building secure, efficient, and user-centric digital systems that make a real-world impact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work section-slide">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">myProjects.filter(p => p.status === 'completed')</h2>
+                <div class="geometric-accent"></div>
+            </div>
+
+            <div class="work-grid">
+                <article class="work-item featured-project">
+                    <div class="work-content">
+                        <h3 class="work-title">SIFMS - State Integrated Financial Management System</h3>
+                        <p class="work-description">.NET • C# • Angular • SQL Server • Government Systems</p>
+                        <p class="work-detail">Developing full-stack application for state-level financial management platform. Working with a highly skilled team to develop, maintain, and enhance government financial systems. Responsible for debugging, implementing new features, and ensuring system stability for digital governance.</p>
+                        <div class="work-tags">
+                            <span class="tag featured">State Government</span>
+                            <span class="tag">Enterprise</span>
+                            <span class="tag active">Active Project</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item">
+                    <div class="work-content">
+                        <h3 class="work-title">Integrated Command and Control Center</h3>
+                        <p class="work-description">Enterprise IT • Smart City Systems • Network Administration</p>
+                        <p class="work-detail">IT Engineer at Sheeltron Digital Systems, spearheading critical infrastructure operations at the Integrated Command and Control Centre (Gangtok). Ensuring high availability and resilience for city-wide smart systems with 99.9% uptime.</p>
+                        <div class="work-tags">
+                            <span class="tag certified">Google Certified</span>
+                            <span class="tag">Smart City</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item">
+                    <div class="work-content">
+                        <h3 class="work-title">Apada Sewa</h3>
+                        <p class="work-description">Flutter • Dart • REST API</p>
+                        <p class="work-detail">Developed and Designed UI/UX and developed RESTful API for server communication with government databases.</p>
+                        <div class="work-tags">
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">Government</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item">
+                    <div class="work-content">
+                        <h3 class="work-title">MR Image Segmentation App</h3>
+                        <p class="work-description">Java • Python • Neural Networks • C++</p>
+                        <p class="work-detail">Developed medical imaging application using machine learning for MR image segmentation, improving diagnostic accuracy through advanced neural network algorithms.</p>
+                        <div class="work-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Medical</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-slide">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">contact.execute()</h2>
+                <div class="contact-info">
+                    <div class="code-block">
+                        <pre>const contact = {
+    email: "blue1x@gmail.com",
+    website: "https://blue1x.dev",
+    location: "Gangtok, Sikkim, India",
+    availability: "Open to opportunities",
+    responseTime: "< 24 hours"
+};</pre>
+                    </div>
+                    <div class="contact-actions">
+                        <button class="btn-primary" onclick="window.location.href='mailto:blue1x@gmail.com'">Send Email</button>
+                        <button class="btn-secondary" onclick="downloadCV()">Download CV</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>&copy; 2024 blue1x. All rights reserved.</p>
+                    <p>Crafted with code and coffee ☕</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
